@@ -102,18 +102,6 @@ Need a JSON file (or JSONL) where each entry corresponds to one test case:
   - Produce pixel-level masks or bounding boxes around the pathology.  
   - Use them to support the narrative and strengthen clinician trust.
 
-
-####  Evaluation Criteria
-Expert reviewers will rate submissions based on:
-
-1. **Answer correctness** (from Subtask 1).  
-2. **Clarity & Clinical Relevance** of `textual_explanation`.  
-3. **Visual Alignment** — does the visual correctly highlight the finding?  
-4. **Confidence Calibration** — if provided, does confidence match actual correctness?
-5. **Methodology and Novelty**
-
-
-
 ⚠️ **Note:** Participation in Subtask 2 requires completion of Subtask 1.
 
 ---
@@ -192,13 +180,16 @@ If you encounter any issues with submission, **don’t hesitate to contact us**.
   - **Transformed Setting:** Augmented images for robustness testing  
 - **Criteria:** Accuracy, relevance, and medical correctness
 
-### 💬 **Subtask 2: Explainability Score**
-- Expert-reviewed metrics:
-  - Correctness
-  - Medical relevance
-  - Cross-modal coherence
-  - Visual clarity, etc.
-- Encourages **interpretable and safe model behavior**
+### 💬 **Subtask 2: Explainability**
+
+Expert reviewers will rate submissions based on:
+1. **Answer correctness** (from Subtask 1).  
+2. **Clarity & Clinical Relevance** of `textual_explanation`.  
+3. **Visual Alignment** — does the visual correctly highlight the finding?  
+4. **Confidence Calibration** — if provided, does confidence match actual correctness?
+5. **Methodology and Novelty**
+
+
 
 ---
 
