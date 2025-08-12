@@ -29,14 +29,80 @@ This task is a continuation of the long-running **Medico series** at MediaEval, 
 
 ---
 
-### 🖌️ **Subtask 2: Multimodal Explainability for Clinicians**
+### Subtask 2: Clinician-Oriented Multimodal Explanations in GI
 
-📈 **Goal:** Move beyond prediction — provide **interpretable, multimodal explanations** that support:
-- Region-based visual highlights 🖼️
-- Textual clinical justifications 📖
-- Confidence or uncertainty estimates 📉
+The goal of Subtask 2 is to move beyond simply predicting an answer (Subtask 1) and generate **rich, multimodal explanations** that are **transparent, understandable, and trustworthy** for clinicians.  
+Your system should **justify its own predictions** using **multiple complementary forms of reasoning**—e.g., combining a detailed textual clinical explanation with a visual localization and/or confidence measure.
 
-🔄 Each explanation should reflect **clinical reasoning** to assist human experts in understanding AI output.
+This task is intentionally **open-ended** to encourage innovation, but your explanation must be:
+- **Faithful** to the model’s own reasoning.
+- **Clinically relevant** and medically sound.
+- **Useful** for real-world decision-making.
+
+#### Submission Format
+Submit a JSON file (or JSONL) where each entry corresponds to one test case:
+
+```json
+{
+  "img_id": "UNIQUE_IMAGE_IDENTIFIER",
+  "question": "Original question posed to the model.",
+  "answer": "Model's prediction from Subtask 1.",
+  "textual_explanation": "Detailed narrative in clinical language justifying the answer.",
+  "visual_explanation": {
+    "type": "heatmap | segmentation_mask | bounding_box | etc.",
+    "format": "path/to/visual.png | base64_string | [[x1,y1,x2,y2]]",
+    "description": "Brief description of what the visual shows."
+  },
+  "confidence_score": 0.92
+}
+```
+
+
+####  Field-by-Field Requirements
+- **`img_id` / `question` / `answer`**  
+  - Must match the Subtask 1 data and predictions exactly.  
+
+- **`textual_explanation` (Mandatory)**  
+  - Detailed, clinician-oriented reasoning that goes beyond stating the answer.  
+  - Reference visual cues (location, morphology, color, size, vascular pattern, etc.).  
+  - Example: *"Sessile polyp in the lower-left quadrant with disrupted vascular pattern and smooth surface, consistent with adenoma."*
+
+- **`visual_explanation` (Optional but Highly Encouraged)**  
+  - Can be **heatmaps** (Grad-CAM, attention), **segmentation masks**, or **bounding boxes**.  
+  - Must clearly link to the textual explanation and highlight the relevant region(s).  
+
+- **`confidence_score` (Optional but Encouraged)**  
+  - Float in [0, 1] indicating certainty in the `answer`.  
+  - Can come from softmax, calibrated uncertainty, or Bayesian methods.  
+
+
+#### Suggested Approaches
+- **Idea 1: VLM Self-Probing for Explanations**  
+  Use your Subtask 1 Visual-Language Model to ask auxiliary questions:  
+  - *"What is the abnormality?"* → "Polyp"  
+  - *"Where is it located?"* → "Ascending colon"  
+  - *"Describe its morphology"* → "Sessile, smooth surface"  
+  Combine these into a coherent `textual_explanation`.
+
+- **Idea 2: Visual Grounding**  
+  - Generate **heatmaps** (Grad-CAM, attention maps) showing influential regions.  
+  - Provide these in `visual_explanation` to back up the textual claim.  
+
+- **Idea 3: Segmentation / Detection**  
+  - Produce pixel-level masks or bounding boxes around the pathology.  
+  - Use them to support the narrative and strengthen clinician trust.
+
+
+####  Evaluation Criteria
+Expert reviewers will rate submissions based on:
+
+1. **Answer correctness** (from Subtask 1).  
+2. **Clarity & Clinical Relevance** of `textual_explanation`.  
+3. **Visual Alignment** — does the visual correctly highlight the finding?  
+4. **Confidence Calibration** — if provided, does confidence match actual correctness?
+5. **Methodology and Novelty**
+
+
 
 ⚠️ **Note:** Participation in Subtask 2 requires completion of Subtask 1.
 
@@ -118,9 +184,10 @@ If you encounter any issues with submission, **don’t hesitate to contact us**.
 
 ### 💬 **Subtask 2: Explainability Score**
 - Expert-reviewed metrics:
-  - Visual clarity
+  - Correctness
   - Medical relevance
   - Cross-modal coherence
+  - Visual clarity, etc.
 - Encourages **interpretable and safe model behavior**
 
 ---
