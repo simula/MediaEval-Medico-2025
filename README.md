@@ -25,7 +25,13 @@ This task is a continuation of the long-running **Medico series** at MediaEval, 
 - Color-related  
 - Location-related  
 - Numerical Count  
-- Merged reasoning-based questions  
+- Merged reasoning-based questions
+
+#### 💥 Example Training Notebook: 
+Dont know where to start? See: [Training with ms-swift](https://github.com/MediaEval-Medico-2025/blob/main/Task_1_Sample_Notebook.ipynb)
+<a target="_blank" href="https://colab.research.google.com/github/simula/MediaEval-Medico-2025/blob/main/Task_1_Sample_Notebook.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ---
 
