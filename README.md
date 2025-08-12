@@ -33,6 +33,8 @@ Dont know where to start? See: [Training with ms-swift](https://github.com/Media
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
+You can only submit your work for Task 1 if you wish to participate.
+
 ---
 
 ### Subtask 2: Clinician-Oriented Multimodal Explanations in GI
