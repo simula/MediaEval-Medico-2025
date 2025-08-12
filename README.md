@@ -1,6 +1,8 @@
 # 🌟 **MediaEval Medico 2025: Explainable VQA for GI Imaging** 🌟
 
-📋 [**GitHub Repository**](https://github.com/SushantGautam/MediaEval-Medico-2025) | 🔗 [**MediaEval 2025**](https://multimediaeval.github.io/editions/2025/tasks/medico/)  
+📋 [**GitHub Repository**](https://github.com/SushantGautam/MediaEval-Medico-2025) | 🔗 [**MediaEval 2025**](https://multimediaeval.github.io/editions/2025/tasks/medico/)   | 📝 [**MediaEval 2025 Registration**](https://forms.gle/y7v1VLP7D9vsbuqv5) | 🏆 [**Leaderboard**/ Registered Submissions](https://simulamet-medico-2025.hf.space)
+
+
 
 The **MediaEval Medico 2025 Challenge** 🔬 focuses on **Visual Question Answering (VQA)** for **Gastrointestinal (GI) imaging**, emphasizing **explainability** 🤔📖 to foster **trustworthy AI** for **clinical adoption** ⚕️.
 
