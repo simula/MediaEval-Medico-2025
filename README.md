@@ -119,6 +119,8 @@ Rated by experts on:
 ---
 ## 🏆 **Submission System**
 
+>  🚧  Work in Progress — We are currently preparing the submission system to ensure it is fully functional when submissions begin. Please do not hesitate to contact us if you encounter any issues.
+
 📌 [View Registered Submissions](https://simulamet-medico-2025.hf.space)
 
 We use the [`medvqa`](https://pypi.org/project/medvqa/) Python package to **validate and submit** models to the official system.
