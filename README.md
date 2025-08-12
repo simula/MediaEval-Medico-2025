@@ -40,7 +40,7 @@ This task is intentionally **open-ended** to encourage innovation, but your expl
 - **Useful** for real-world decision-making.
 
 #### Submission Format
-Submit a JSON file (or JSONL) where each entry corresponds to one test case:
+Need a JSON file (or JSONL) where each entry corresponds to one test case:
 
 ```json
 {
