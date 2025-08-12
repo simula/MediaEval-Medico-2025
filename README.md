@@ -9,6 +9,10 @@ The **MediaEval Medico 2025 Challenge** 🔬 focuses on **Visual Question Answer
 
 This task continues the long-running **Medico series** at MediaEval, now leveraging the newly developed **Kvasir-VQA-x1 dataset**, designed to support **multimodal reasoning** and **interpretable clinical decision support** 📈.
 
+## 📅 Save the Date!
+The **annual MediaEval Workshop** 🗣️ will be held on:
+**🗓️ Saturday–Sunday, 25–26 October 2025** | 📍 Dublin, Ireland 🇮🇪 & Online 🌐(between CMBI 2025 and ACM Multimedia 2025). Participants are invited to join the workshop and present their work submitted to the competition. 🙌🎤.
+
 ---
 
 ## 🌟 **Task Descriptions**
