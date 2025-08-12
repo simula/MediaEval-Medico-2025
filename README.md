@@ -32,8 +32,7 @@ This task continues the long-running **Medico series** at MediaEval, now leverag
 - Merged reasoning-based questions  
 
 💡 **Example Training Notebook:**  
-Not sure where to start? Check out: [Training with ms-swift](https://github.com/simula/MediaEval-Medico-2025/blob/main/Task_1_Sample_Notebook.ipynb)  
-<a target="_blank" href="https://colab.research.google.com/github/simula/MediaEval-Medico-2025/blob/main/Task_1_Sample_Notebook.ipynb">
+Not sure where to start? Check out: [Training with ms-swift](https://github.com/simula/MediaEval-Medico-2025/blob/main/Task_1_Sample_Notebook.ipynb)  <a target="_blank" href="https://colab.research.google.com/github/simula/MediaEval-Medico-2025/blob/main/Task_1_Sample_Notebook.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -101,37 +100,6 @@ Built on **HyperKvasir** and **Kvasir-Instrument**, the **Kvasir-VQA-x1** datase
  
 ---
 
-## 🏆 **Submission System**
-
-📌 [View Registered Submissions](https://simulamet-medico-2025.hf.space)
-
-We use the [`medvqa`](https://pypi.org/project/medvqa/) Python package to **validate and submit** models.  
-Your Hugging Face repo **must include**:
-- [`submission_task1.py`](https://raw.githubusercontent.com/SushantGautam/MedVQA/refs/heads/main/medvqa/submission_samples/medico-2025/submission_task1.py)  
-- [`submission_task2.py`](https://raw.githubusercontent.com/SushantGautam/MedVQA/refs/heads/main/medvqa/submission_samples/medico-2025/submission_task2.py)  
-
-
-### 📦 Install
-```bash
-pip install -U medvqa
-```
-📌 Always use the latest version.
-
-
-### ✅ Validate Before Submitting
-```bash
-medvqa validate --competition=medico-2025 --task=1/2 --repo_id=<your_repo_id>
-```
-
-
-### 🚀 Submit
-```bash
-medvqa validate_and_submit --competition=medico-2025 --task=1/2 --repo_id=<your_repo_id>
-```
-
-Your submission will appear on the [leaderboard](https://simulamet-medico-2025.hf.space).
-
----
 
 ## 🔍 **Evaluation Methodology**
 
@@ -147,6 +115,57 @@ Rated by experts on:
 3. Visual alignment  
 4. Confidence calibration  
 5. Methodology & novelty  
+
+---
+## 🏆 **Submission System**
+
+📌 [View Registered Submissions](https://simulamet-medico-2025.hf.space)
+
+We use the [`medvqa`](https://pypi.org/project/medvqa/) Python package to **validate and submit** models to the official system.
+### 📦 Install
+```bash
+pip install -U medvqa
+```
+Always use the latest version.
+
+The model that needs to be submiited is expected to be in a HuggingFace repository. Your HuggingFace repo **must include** a standalone script named:
+- [`submission_task1.py`](https://raw.githubusercontent.com/SushantGautam/MedVQA/refs/heads/main/medvqa/submission_samples/medico-2025/submission_task1.py)  
+- [`submission_task2.py`](https://raw.githubusercontent.com/SushantGautam/MedVQA/refs/heads/main/medvqa/submission_samples/medico-2025/submission_task2.py)  
+
+Use the provided **template script**, and make sure to:
+- Modify all `TODO` sections  
+- Add required information directly in the script
+
+### ✅ Validate Before Submitting
+First make sure your submission script works fine in your working environment and it loads the model correctly from your submission repo and generates outputs in the required format.
+
+```bash
+python submission_task1.py
+```
+
+Next, you can validate the script to work independently. The .py script should now be in the root of the same HuggingFace repo as your model. You can try this in a new venv:
+
+```bash
+medvqa validate --competition=medico-2025 --task=1/2 --repo_id=<your_repo_id>
+```
+- `--competition`: Set to `medico-2025`
+- `--task`: Use `1` for Task 1 or `2` for Task 2  
+- `--repo_id`: Your **HuggingFace model repo ID** (e.g., `SushantGautam/XXModelCheckpoint`)
+  
+#### 📄 Additional Dependencies  
+If your code requires extra packages, you must include a `requirements.txt` in the **root of the repo**. The system will install these automatically during validation/submission.
+Else you will get package missing errors.
+
+### 🚀 Submit
+If validation is okey, you can just run:
+
+```bash
+medvqa validate_and_submit --competition=medico-2025 --task=1/2 --repo_id=<your_repo_id>
+```
+This will make a submisision and your username, along with the task and time, should be visible on the [leaderboard](https://simulamet-medico-2025.hf.space) for it to be considered officially submitted.
+The submission library will make your Hugging Face repository public but gated, granting the organizers access to your repo.
+It must remain unchanged at least until the results of the competition are announced. However, you are free to make your model fully public (non-gated). 
+If you encounter any issues with submission, **don’t hesitate to contact us**.
 
 ---
 
