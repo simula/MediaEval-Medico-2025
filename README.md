@@ -185,12 +185,12 @@ If you encounter any issues with submission, **don’t hesitate to contact us**.
 
 ## 📅 **Timeline (Preliminary)**
 
-- 📦 **14 May 2025** — Development data release ✅  
-- 🧪 **30 June 2025** — Validation data release  ✅  
-- 📄 **12 September 2025** — Submission deadline  
-- 🏆 **26 September 2025** — Results announced  
-- 📝 **8 October 2025** — Working Notes deadline  
-- 🏫 **25–26 October 2025** — MediaEval Workshop (Dublin + Online)  
+- 📝 **April 2025** — Registration for task participation opens ✅  
+- 📦 **May 2025** — Development data release ✅  
+- 🧪 **June 2025** — Test data release ✅  
+- 📄 **24 September 2025 (Wed.)** — Runs due  
+- 📝 **8 October 2025 (Wed.)** — Working Notes deadline  
+- 🏫 **25–26 October 2025 (Sat.–Sun.)** — MediaEval Workshop (Dublin + Online)  
 
 ---
 
