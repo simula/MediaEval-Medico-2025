@@ -17,7 +17,7 @@ The **annual MediaEval Workshop** 🗣️ will be held on:
 
 ## 🌟 **Task Descriptions**
 
-### 🔍 **Subtask 1: GI Image Question Answering (VQA)**
+### 🔍 **Subtask 1: AI Performance on Medical Image Question Answering**
 
 📈 **Goal:** Develop AI models that can accurately answer clinical questions using **GI endoscopic images**.
 
