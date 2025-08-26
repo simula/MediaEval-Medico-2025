@@ -134,13 +134,27 @@ pip install -U medvqa
 ```
 Always use the latest version.
 
-The model that needs to be submiited is expected to be in a HuggingFace repository. Your HuggingFace repo **must include** a standalone script named:
-- [`submission_task1.py`](https://raw.githubusercontent.com/SushantGautam/MedVQA/refs/heads/main/medvqa/submission_samples/medico-2025/submission_task1.py)  
-- [`submission_task2.py`](https://raw.githubusercontent.com/SushantGautam/MedVQA/refs/heads/main/medvqa/submission_samples/medico-2025/submission_task2.py)  
+The model that needs to be submitted is expected to be in a HuggingFace repository. Your HuggingFace repo **must include** a standalone script named:
+- [submission_task1.py](https://raw.githubusercontent.com/SushantGautam/MedVQA/refs/heads/main/medvqa/submission_samples/medico-2025/submission_task1.py) for task 1.
+- [submission_task2.py](https://raw.githubusercontent.com/SushantGautam/MedVQA/refs/heads/main/medvqa/submission_samples/medico-2025/submission_task2.py) for task 2.
 
-Use the provided **template script**, and make sure to:
+### Instructions for Participants
+
+Use the provided **template script**, and make sure to:  
 - Modify all `TODO` sections  
-- Add required information directly in the script
+- Add required information (e.g., model path, inference logic, preprocessing steps) directly in the script  
+- Keep the required input/output format unchanged  
+
+###  Task 1 Script Variants & Naming Requirements
+
+You have two template options for the Task 1 inference script:  
+
+- **MS-Swift version**: [submission_task1_swift.py](https://github.com/SushantGautam/MedVQA/blob/main/medvqa/submission_samples/medico-2025/submission_task1_swift.py)
+- **PyTorch version**: [submission_task1.py](https://raw.githubusercontent.com/SushantGautam/MedVQA/refs/heads/main/medvqa/submission_samples/medico-2025/submission_task1.py)
+
+Both scripts already include **template example code** for model loading and inference.  
+
+⚠️ **Important**: Even if you use the MS-Swift template, your final script in the repository **must still be named** `submission_task1.py`.  
 
 ### ✅ Validate Before Submitting
 First make sure your submission script works fine in your working environment and it loads the model correctly from your submission repo and generates outputs in the required format.
