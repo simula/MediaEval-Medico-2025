@@ -170,7 +170,7 @@ medvqa validate --competition=medico-2025 --task=1/2 --repo_id=<your_repo_id>
 ```
 - `--competition`: Set to `medico-2025`
 - `--task`: Use `1` for Task 1 or `2` for Task 2  
-- `--repo_id`: Your **HuggingFace model repo ID** (e.g., `SushantGautam/XXModelCheckpoint`)
+- `--repo_id`: Your **HuggingFace model repo ID** (e.g., [SushantGautam/Florence-2-vqa-demo](https://huggingface.co/SushantGautam/Florence-2-vqa-demo))
   
 #### 📄 Additional Dependencies  
 If your code requires extra packages, you must include a `requirements.txt` in the **root of the repo**. The system will install these automatically during validation/submission.
