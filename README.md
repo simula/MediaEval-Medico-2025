@@ -66,11 +66,11 @@ A JSON/JSONL file where each entry corresponds to one test case:
   "question": "Original question posed to the model.",
   "answer": "Model's prediction from Subtask 1.",
   "textual_explanation": "Detailed narrative in clinical language justifying the answer.",
-  "visual_explanation": {
+  "visual_explanation": [{
     "type": "heatmap | segmentation_mask | bounding_box | etc.",
-    "format": "path/to/visual.png | base64_string | [[x1,y1,x2,y2]]",
-    "description": "Brief description of what the visual shows."
-  },
+    "data": "path/to/visual.png | [[x1,y1,x2,y2]]",
+    "description": "(Optional) Highlights the region of interest that supports the answer (e.g., bounding box around the polyp, or heatmap showing focus on mucosal irregularity)."
+  }],
   "confidence_score": 0.92
 }
 ```
