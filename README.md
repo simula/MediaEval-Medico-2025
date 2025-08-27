@@ -73,7 +73,7 @@ val_set_task2 is a 🤗 Dataset containing the columns val_id, img_id, image, an
 
 #### 📄 Submission Format
 
-A JSON/JSONL file where each entry corresponds to one test case:
+A JSONL file where each entry corresponds to one test case:
 
 ```json
 {
@@ -161,7 +161,7 @@ Use the provided **template script**, and make sure to:
 - Add required information (e.g., model path, inference logic, preprocessing steps) directly in the script  
 - Keep the required input/output format unchanged  
 
-###  Task 1 Script Variants & Naming Requirements
+###  Task 1 : Script Variants & Naming Requirements
 
 You have two template options for the Task 1 inference script:  
 
@@ -171,6 +171,20 @@ You have two template options for the Task 1 inference script:
 Both scripts already include **template example code** for model loading and inference.  
 
 ⚠️ **Important**: Even if you use the MS-Swift template, your final script in the repository **must still be named** `submission_task1.py`.  
+
+### Task 2 : 📦 What to Submit (Repository Layout)
+Host your submission in a **Hugging Face model repository** containing:
+- `submission_task2.jsonl` — one object per `val_id`  
+- `visuals/` — optional folder with any referenced visual artifacts (heatmaps, masks, boxes as JSON, etc.)
+- `submission_task2.py` file with you team details
+- A short `README.md` explaining how you created the explanations and any post-processing you want to share
+
+**Demo submission repo:**  
+https://huggingface.co/SushantGautam/Medico2025_subtask2_demo_submission/tree/main
+
+**Naming tips**
+- Keep `data` paths in `visual_explanation` **relative** to repo root (e.g., `visuals/1234_heatmap.png`).  
+- Ensure every `val_id` in the file corresponds to an item in `val_set_task2`.
 
 ### ✅ Validate Before Submitting
 First make sure your submission script works fine in your working environment and it loads the model correctly from your submission repo and generates outputs in the required format.
