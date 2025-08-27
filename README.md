@@ -255,3 +255,30 @@ Let’s build the future of **trustworthy, explainable medical AI**.
 📁 Repo: [**GitHub**](https://github.com/SushantGautam/MediaEval-Medico-2025)  
 
 🚀 *Develop explainable AI. Help doctors. Improve lives.*  
+---
+
+## 📚 How to Cite  
+
+If you are inspired by the **MediaEval Medico 2025 Challenge** or the **Kvasir-VQA-x1 dataset** in your research, please cite the following papers:  
+
+```bibtex
+@article{Gautam2025Aug,
+	author = {Gautam, Sushant and Thambawita, Vajira and Riegler, Michael and others},
+	title = {{Medico 2025: Visual Question Answering for Gastrointestinal Imaging}},
+	journal = {arXiv},
+	year = {2025},
+	month = aug,
+	eprint = {2508.10869},
+	doi = {10.48550/arXiv.2508.10869}
+}
+
+@article{Gautam2025Jun,
+	author = {Gautam, Sushant and Riegler, Michael A. and Halvorsen, P{\aa}l},
+	title = {{Kvasir-VQA-x1: A Multimodal Dataset for Medical Reasoning and Robust MedVQA in Gastrointestinal Endoscopy}},
+	journal = {arXiv},
+	year = {2025},
+	month = jun,
+	eprint = {2506.09958},
+	doi = {10.48550/arXiv.2506.09958}
+}
+```
