@@ -69,7 +69,7 @@ val_set_task2 = (
       .cast_column("image", HfImage())
 )
 ```
-val_set_2 is a 🤗 Dataset containing the columns val_id, img_id, image, and question, where image is Pillow Image for easy access.
+val_set_task2 is a 🤗 Dataset containing the columns val_id, img_id, image, and question, where image is Pillow Image for easy access.
 
 #### 📄 Submission Format
 
