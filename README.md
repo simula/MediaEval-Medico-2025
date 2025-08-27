@@ -53,8 +53,23 @@ Your system should **justify its predictions** using **multiple complementary re
 **Requirements:**
 - **Faithful** to the model’s reasoning.  
 - **Clinically relevant** and medically sound.  
-- **Useful** for real-world decision-making.  
+- **Useful** for real-world decision-making.
+  
+#### 📄 Validation set for Subtask 2:
+```python
+from datasets import load_dataset, Image as HfImage
 
+ds = load_dataset("SimulaMet/Kvasir-VQA-x1")["test"]
+val_set_task2 = (
+    ds.filter(lambda x: x["complexity"] == 1)
+      .shuffle(seed=42)
+      .select(range(1500))
+      .add_column("val_id", list(range(1500)))
+      .remove_columns(["complexity", "answer", "original", "question_class"])
+      .cast_column("image", HfImage())
+)
+```
+val_set_2 is a 🤗 Dataset containing the columns val_id, img_id, image, and question, where image is Pillow Image for easy access.
 
 #### 📄 Submission Format
 
@@ -62,9 +77,10 @@ A JSON/JSONL file where each entry corresponds to one test case:
 
 ```json
 {
+  "val_id": "index of validation subset for subtask 2, as in val_set_task2",
   "img_id": "UNIQUE_IMAGE_IDENTIFIER",
   "question": "Original question posed to the model.",
-  "answer": "Model's prediction from Subtask 1.",
+  "answer": "Prediction from your model from Subtask 1.",
   "textual_explanation": "Detailed narrative in clinical language justifying the answer.",
   "visual_explanation": [{
     "type": "heatmap | segmentation_mask | bounding_box | etc.",
