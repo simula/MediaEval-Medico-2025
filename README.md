@@ -43,6 +43,7 @@ Not sure where to start? Check out: [Training with ms-swift](https://github.com/
 ⚠️ **Note:** You can only submit work for **Task 1** if you wish to participate.
 
 ---
+It is acceptable to use the full test set for training in your final submission to get competitive score. However, we strongly recommend using proper splits for training and clearly reporting in your paper which splits were used for training, and validation.
 
 ### 💬 **Subtask 2: Clinician-Oriented Multimodal Explanations in GI**
 
@@ -126,7 +127,9 @@ Built on **HyperKvasir** and **Kvasir-Instrument**, the **Kvasir-VQA-x1** datase
 **Subtask 1 (VQA Performance)**  
 - Metrics: BLEU, ROUGE (1/2/L), METEOR  
 - Settings: Original & augmented images  
-- Criteria: Accuracy, relevance, medical correctness  
+- Criteria: Accuracy, relevance, medical correctness
+
+The official challenge score will be computed on a separate hidden challenge set with more metrics. This ensures fairness and that final results truly reflect model performance.
 
 **Subtask 2 (Explainability)**  
 Rated by experts on:
