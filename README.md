@@ -1,4 +1,8 @@
-
+> ✅ **Update (October 2025):** The MediaEval Medico 2025 Challenge has concluded.  
+> 📊 **Competition Results:** https://github.com/simula/MediaEval-Medico-2025/blob/main/competition_results.md
+> > 🎥 Session recordings: https://www.youtube.com/playlist?list=PLHr-k69ARa0jMZycp19Kefje3dPMG4znR
+> 🙏 Thank you to all participants and contributors!
+> 
 # 🌟 **MediaEval Medico 2025: VQA (with multimodal explanations) for GastroIntestinal Imaging** 🌟
 
 📋 [**GitHub Repository**](https://github.com/simula/MediaEval-Medico-2025) | 🔗 [**MediaEval 2025**](https://multimediaeval.github.io/editions/2025/tasks/medico/) | 📝 [**Registration Form**](https://forms.gle/y7v1VLP7D9vsbuqv5) | 🏆 [**Leaderboard / Registered Submissions**](https://simulamet-medico-2025.hf.space)
@@ -9,9 +13,13 @@ The **MediaEval Medico 2025 Challenge** 🔬 focuses on **Visual Question Answer
 
 This task continues the long-running **Medico series** at MediaEval, now leveraging the newly developed **Kvasir-VQA-x1 dataset**, designed to support **multimodal reasoning** and **interpretable clinical decision support** 📈.
 
-## 📅 Save the Date!
-The **annual MediaEval Workshop** 🗣️ will be held on:
-**🗓️ Saturday–Sunday, 25–26 October 2025** | 📍 Dublin, Ireland 🇮🇪 & Online 🌐(between CMBI 2025 and ACM Multimedia 2025). Participants are invited to join the workshop and present their work submitted to the competition. 🙌🎤.
+## 🏁 Workshop Completed
+The **MediaEval Workshop** 🗣️ was held on:
+**🗓️ Saturday–Sunday, 25–26 October 2025** | 📍 Dublin, Ireland 🇮🇪 & Online 🌐 (between CMBI 2025 and ACM Multimedia 2025).  
+📊 **Competition Results:** https://github.com/simula/MediaEval-Medico-2025/blob/main/competition_results.md
+🎥 Recordings: https://www.youtube.com/playlist?list=PLHr-k69ARa0jMZycp19Kefje3dPMG4znR
+
+---
 
 ---
 
