@@ -32,3 +32,5 @@ This contains the final results for **Task 1** and **Task 2** from the official 
 | 4 | IReL@IIT (BHU) | 0.59 | 0.27 | 0.38 | 0.82 | 0.25 | Dual-track (PaliGemma + Florence-2); artifact inpainting + token-prob confidence |
 
 ---
+
+**Note:** The CVG-IBA team received a distinctive mention from MediaEval for their innovative approach and strong localisation performance.
