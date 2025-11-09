@@ -1,6 +1,6 @@
 > ✅ **Update (October 2025):** The MediaEval Medico 2025 Challenge has concluded.  
-> 📊 **Competition Results:** https://github.com/simula/MediaEval-Medico-2025/blob/main/competition_results.md
-> 🎥 Session recordings: https://www.youtube.com/playlist?list=PLHr-k69ARa0jMZycp19Kefje3dPMG4znR
+> 📊 **Competition Results:** https://github.com/simula/MediaEval-Medico-2025/blob/main/competition_results.md  
+> 🎥 Session recordings: https://www.youtube.com/playlist?list=PLHr-k69ARa0jMZycp19Kefje3dPMG4znR  
 > 🙏 Thank you to all participants and contributors!
 > 
 # 🌟 **MediaEval Medico 2025: VQA (with multimodal explanations) for GastroIntestinal Imaging** 🌟
