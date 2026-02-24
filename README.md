@@ -1,4 +1,9 @@
-> ✅ **Update (October 2025):** The MediaEval Medico 2025 Challenge has concluded.  
+> 🚀 **The journey continues!**  
+> 🆕 The next iteration of the challenge is now live:  
+> 🔗 https://github.com/simula/MediaEval-Medico-2026  
+> 🌟 Join us for another exciting round of innovation and collaboration!
+>
+> > ✅ **Update (October 2025):** The MediaEval Medico 2025 Challenge has concluded.  
 > 📊 **Competition Results:** https://github.com/simula/MediaEval-Medico-2025/blob/main/competition_results.md  
 > 🎥 Session recordings: https://www.youtube.com/playlist?list=PLHr-k69ARa0jMZycp19Kefje3dPMG4znR  
 > 🙏 Thank you to all participants and contributors!
